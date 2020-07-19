@@ -24,6 +24,11 @@ public class FindComponent : MonoBehaviour {
 
 		// Find Image Component
 		image = canvas.FindChild("Image").GetComponent<Image>();
+		
+		// Find Image Components
+		ImageArray = new Image[2];
+		ImageArray[0] = canvas.FindChild("01").GetComponent<Image>();
+		ImageArray[1] = canvas.FindChild("02").GetComponent<Image>();
 	}
 
 	// Update is called once per frame
