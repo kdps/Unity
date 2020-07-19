@@ -29,6 +29,12 @@ public class FindComponent : MonoBehaviour {
 		ImageArray = new Image[2];
 		ImageArray[0] = canvas.FindChild("01").GetComponent<Image>();
 		ImageArray[1] = canvas.FindChild("02").GetComponent<Image>();
+		
+		// Set Component Active 
+		text.gameObject.SetActive(true);
+		
+		// Set Text Content
+		text.text = "Hello World!";
 	}
 
 	// Update is called once per frame
